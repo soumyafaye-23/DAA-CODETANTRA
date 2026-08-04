@@ -10,7 +10,7 @@
 ![Platform](https://img.shields.io/badge/Platform-CodeTantra-7B2D8E?style=for-the-badge&logo=academia&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge&logo=statuspage&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=opensourceinitiative&logoColor=white)
-![Last Commit](https://img.shields.io/github/last-commit/Sameerkaradbhajne/codetantra-DAA-codes?style=for-the-badge&color=1f6feb&logo=github)
+![Last Commit](https://img.shields.io/github/last-commit/soumyafaye-23/DAA-CODETANTRA?style=for-the-badge&color=1f6feb&logo=github)
 
 <br/>
 
@@ -432,8 +432,8 @@ Contributions are welcome! If you'd like to add more programs or optimize existi
 <table>
 <tr>
 <td align="center">
-<b>Sameer Karadbhajne</b><br/>
-<a href="https://github.com/Sameerkaradbhajne">
+<b>Soumya Faye</b><br/>
+<a href="https://github.com/soumyafaye-23">
 <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" />
 </a>
 </td>
