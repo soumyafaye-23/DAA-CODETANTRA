@@ -58,7 +58,8 @@ DAA-Solutions/
 │   └── 1.1.5. Implement Sum of Subset Problem Using Backtracking.c
 ├── 📂 Practical - 04 (Shortest Path Algorithms)
 │   ├── 1.1.6. Dijkstra's Shortest Path Algorithm.c
-│   └── 1.1.7. Bellman-Ford algorithm.c
+│   ├── 1.1.7. Bellman-Ford algorithm.c
+│   └── 1.1.8. Matrix Multiplication.c
 ├── 📂 Practical - 05 (Graph Traversals)
 │   ├── 1.1.9. Breadth First Search (BFS).c
 │   └── 1.1.10. Depth-First Search (DFS).c
