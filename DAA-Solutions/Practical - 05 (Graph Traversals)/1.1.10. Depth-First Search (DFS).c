@@ -1,17 +1,100 @@
-/**
- * @file 1.1.10. Depth-First Search (DFS).c
- * @brief 1.1.10. Depth-First Search (DFS)
- * @strategy Graph Traversal
- * @complexity
- *   - Time Complexity:
- *     - Best: O(V + E), Avg: O(V + E), Worst: O(V + E)
- *   - Space Complexity: O(V)
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 
+#define MAX_VERTICES 100
+
+// Graph represented using adjacency list
+typedef struct Node {
+    int vertex;
+    struct Node* next;
+} Node;
+
+Node* adjList[MAX_VERTICES];
+int visited[MAX_VERTICES];
+
+// Function to create a new adjacency list node
+Node* createNode(int vertex) {
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->vertex = vertex;
+    newNode->next = NULL;
+    return newNode;
+}
+
+// Function to add an edge to the graph
+void addEdge(int u, int v) {
+    Node* newNode = createNode(v);
+    newNode->next = adjList[u];
+    adjList[u] = newNode;
+}
+
+// Function to sort the adjacency list for each vertex
+void sortAdjList(int V) {
+    for (int i = 0; i < V; i++) {
+        // Simple bubble sort for the linked list
+        int swapped;
+        Node *ptr1;
+        Node *l = adjList[i];
+
+        if (l == NULL) continue;
+
+        do {
+            swapped = 0;
+            ptr1 = l;
+
+            while (ptr1->next != NULL) {
+                if (ptr1->vertex > ptr1->next->vertex) {
+                    int temp = ptr1->vertex;
+                    ptr1->vertex = ptr1->next->vertex;
+                    ptr1->next->vertex = temp;
+                    swapped = 1;
+                }
+                ptr1 = ptr1->next;
+            }
+        } while (swapped);
+    }
+}
+
+// Depth-First Search (DFS) function
+void DFS(int start) {
+    visited[start] = 1;
+    printf("%d ", start);
+
+    Node* current = adjList[start];
+    while (current != NULL) {
+        if (!visited[current->vertex]) {
+            DFS(current->vertex);
+        }
+        current = current->next;
+    }
+}
+
 int main() {
-    // TODO: Insert CodeTantra specific question and solution here
+    int V, E;
+    int u, v, start;
+
+    // Read number of vertices and edges
+    scanf("%d %d", &V, &E);
+
+    // Initialize adjacency list
+    for (int i = 0; i < V; i++) {
+        adjList[i] = NULL;
+        visited[i] = 0;
+    }
+
+    // Read the edges
+    for (int i = 0; i < E; i++) {
+        scanf("%d %d", &u, &v);
+        addEdge(u, v);
+    }
+
+    // Sort the adjacency list for each vertex
+    sortAdjList(V);
+
+    // Read the starting node
+    scanf("%d", &start);
+
+    // Perform DFS starting from the given node
+    DFS(start);
+
     return 0;
 }

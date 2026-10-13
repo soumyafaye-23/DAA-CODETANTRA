@@ -242,7 +242,7 @@ DAA-Solutions/
 </tr>
 <tr>
 <td><b>1.1.10.</b> Depth-First Search (DFS)</td>
-<td>Explores as deep as possible along each branch of a graph before backtracking recursively.</td>
+<td>Performs DFS on a <b>directed graph</b> using an <b>adjacency list</b>. Visits neighbors in sorted (ascending) order to ensure consistent traversal. Prints all reachable vertices from a given start node.</td>
 <td>
 <code>Best: O(V + E)</code><br/>
 <code>Avg: O(V + E)</code><br/>
