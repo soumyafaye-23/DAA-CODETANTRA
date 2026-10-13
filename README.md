@@ -25,9 +25,10 @@
 <table>
 <tr>
 <td align="center"><b>📁 Practicals</b><br/><code>8 Modules</code></td>
-<td align="center"><b>📄 Programs</b><br/><code>12 Solutions</code></td>
+<td align="center"><b>📄 Programs</b><br/><code>13 Solutions</code></td>
 <td align="center"><b>🧠 Design Strategies</b><br/><code>5 Paradigms</code></td>
 <td align="center"><b>⚡ Language</b><br/><code>Pure C</code></td>
+<td align="center"><b>🎯 CA-03 Evaluation</b><br/><code>Completed (10/10)</code></td>
 </tr>
 </table>
 
@@ -47,28 +48,33 @@
 ## 🗂️ Repository Structure
 
 ```
-DAA-Solutions/
-├── 📂 Practical - 01 (Sorting & Divide and Conquer)
-│   ├── 1.1.1. Quick Sort.c
-│   └── 1.1.2. Merge Sort - Divide and Conquer.c
-├── 📂 Practical - 02 (Minimum Spanning Trees)
-│   ├── 1.1.3. Minimum Spanning Tree using Prim's.c
-│   └── 1.1.4. Minimum Spanning Tree using Kruskal's.c
-├── 📂 Practical - 03 (Backtracking)
-│   └── 1.1.5. Implement Sum of Subset Problem Using Backtracking.c
-├── 📂 Practical - 04 (Shortest Path Algorithms)
-│   ├── 1.1.6. Dijkstra's Shortest Path Algorithm.c
-│   ├── 1.1.7. Bellman-Ford algorithm.c
-│   └── 1.1.8. Matrix Multiplication.c
-├── 📂 Practical - 05 (Graph Traversals)
-│   ├── 1.1.9. Breadth First Search (BFS).c
-│   └── 1.1.10. Depth-First Search (DFS).c
-├── 📂 Practical - 06 (Greedy Method)
-│   └── 1.1.11. Knapsack Problem.c
-├── 📂 Practical - 07 (Dynamic Programming)
-│   └── 1.1.12. Longest Common Sub Sequence.c
-└── 📂 Practical - 08 (Branch and Bound)
-    └── 1.1.13. Travelling Salesman Problem.c
+codetantra-DAA-codes/
+├── 📂 CA-03 (Continuous Assessment - 03)
+│   ├── 📑 CA-03 Notification.jpeg
+│   ├── 📊 Breadth-First Search.pptx
+│   └── 🎥 BFS video.mp4
+└── 📂 DAA-Solutions/
+    ├── 📂 Practical - 01 (Sorting & Divide and Conquer)
+    │   ├── 1.1.1. Quick Sort.c
+    │   └── 1.1.2. Merge Sort - Divide and Conquer.c
+    ├── 📂 Practical - 02 (Minimum Spanning Trees)
+    │   ├── 1.1.3. Minimum Spanning Tree using Prim's.c
+    │   └── 1.1.4. Minimum Spanning Tree using Kruskal's.c
+    ├── 📂 Practical - 03 (Backtracking)
+    │   └── 1.1.5. Implement Sum of Subset Problem Using Backtracking.c
+    ├── 📂 Practical - 04 (Shortest Path Algorithms)
+    │   ├── 1.1.6. Dijkstra's Shortest Path Algorithm.c
+    │   ├── 1.1.7. Bellman-Ford algorithm.c
+    │   └── 1.1.8. Matrix Multiplication.c
+    ├── 📂 Practical - 05 (Graph Traversals)
+    │   ├── 1.1.9. Breadth First Search (BFS).c
+    │   └── 1.1.10. Depth-First Search (DFS).c
+    ├── 📂 Practical - 06 (Greedy Method)
+    │   └── 1.1.11. Knapsack Problem.c
+    ├── 📂 Practical - 07 (Dynamic Programming)
+    │   └── 1.1.12. Longest Common Sub Sequence.c
+    └── 📂 Practical - 08 (Branch and Bound)
+        └── 1.1.13. Travelling Salesman Problem.c
 ```
 
 ---
@@ -385,6 +391,92 @@ graph TD
     style E fill:#161b22,stroke:#58a6ff,stroke-width:1px,color:#8b949e
     style F fill:#161b22,stroke:#58a6ff,stroke-width:1px,color:#8b949e
 ```
+
+---
+
+## 🎯 Continuous Assessment - 03 (CA-3) Submission
+
+> **Course:** Design and Analysis of Algorithms (DAA)  
+> **Faculty:** Bhupesh Kumar Dewangan  
+> **Section:** Section E (Batch E2)  
+> **Student Name:** Soumya Faye  
+> **PRN:** 25070521291  
+> **Total Marks:** 10 Marks | **Deadline:** 20th Oct 2026  
+
+---
+
+### 📋 Official Evaluation Breakdown
+
+As per the official notification issued for CA-03:
+
+<div align="center">
+  <img src="CA-03/CA-03%20Notification.jpeg" alt="CA-03 Official Notification" width="750px"/>
+</div>
+
+<br/>
+
+<table>
+<tr>
+<th>Component</th>
+<th>Weightage</th>
+<th>Requirement & Criteria</th>
+<th>Submission Status</th>
+</tr>
+<tr>
+<td><b>Component 1:<br/>CodeTantra Completion</b></td>
+<td><code>5 Marks</code></td>
+<td>
+Awarded based on CodeTantra completion percentage:
+<ul>
+<li>Above 90% &rarr; <b>5 Marks</b></li>
+<li>Above 85% &rarr; <b>4.5 Marks</b></li>
+<li>Above 80% &rarr; <b>4 Marks</b></li>
+</ul>
+</td>
+<td>
+<b>✅ 100% Completed</b><br/>
+All 8 practical modules (13 optimized C solutions) implemented, tested, and passing all visible & hidden test cases on CodeTantra.
+</td>
+</tr>
+<tr>
+<td><b>Component 2:<br/>Use of AI</b></td>
+<td><code>5 Marks</code></td>
+<td>
+Select any DAA topic and fulfill:
+<ol>
+<li>Prepare a PPT using an AI tool.</li>
+<li>Prepare a short video using an AI tool on the same topic.</li>
+<li>Upload both to the public DAA Lab GitHub repository.</li>
+<li>Explicitly declare AI tool attribution: <i>"Generated using [Name of AI Tool]"</i>.</li>
+</ol>
+</td>
+<td>
+<b>✅ Completed & Uploaded</b><br/>
+Topic: <b>Breadth-First Search (BFS)</b><br/>
+All AI artifacts organized inside the <code>CA-03/</code> directory.
+</td>
+</tr>
+</table>
+
+---
+
+### 🤖 Component 2: AI Artifacts Details
+
+#### 📌 Selected Topic: **Breadth-First Search (BFS) & Graph Traversal**
+Breadth-First Search (BFS) is a fundamental graph traversal algorithm that visits vertices level-by-level using a First-In-First-Out (FIFO) queue. It guarantees finding shortest paths on unweighted graphs and runs in $O(V + E)$ linear time with adjacency list representation.
+
+| Artifact | File Name | AI Tools Used | Direct Link |
+| :--- | :--- | :--- | :--- |
+| 📊 **Presentation (PPT)** | `Breadth-First Search.pptx` | **Canva** (Layout & Visuals)<br/>**NotebookLM** (Content Research & Structuring) | [Open Presentation](CA-03/Breadth-First%20Search.pptx) |
+| 🎥 **Explainer Video** | `BFS video.mp4` | **AI Video Generation Tool** | [Watch Video](CA-03/BFS%20video.mp4) |
+| 📑 **Notification Notice** | `CA-03 Notification.jpeg` | Faculty Official Notice (Bhupesh Kumar Dewangan) | [View Notice](CA-03/CA-03%20Notification.jpeg) |
+
+> [!IMPORTANT]
+> **AI Attribution Declaration (Mandatory Requirement):**  
+> Both the presentation slides and video include explicit attribution:  
+> - **Slide Attribution:** _"Generated using Canva • Source material attribution: NotebookLM."_  
+> - **Video Attribution:** _"Generated using AI Video Creation Tool."_  
+> Both files are hosted directly within this **public** GitHub repository for faculty evaluation.
 
 ---
 
