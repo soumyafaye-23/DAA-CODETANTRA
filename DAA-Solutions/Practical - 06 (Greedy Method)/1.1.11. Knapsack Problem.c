@@ -1,17 +1,22 @@
-/**
- * @file 1.1.11. Knapsack Problem.c
- * @brief 1.1.11. Fractional Knapsack Problem
- * @strategy Greedy Method
- * @complexity
- *   - Time Complexity:
- *     - Best: O(n log n), Avg: O(n log n), Worst: O(n log n)
- *   - Space Complexity: O(n)
- */
-
-#include <stdio.h>
-#include <stdlib.h>
-
+#include<stdio.h>
 int main() {
-    // TODO: Insert CodeTantra specific question and solution here
+    int N, W;
+    scanf("%d", &N);
+    int value[N], weight[N];
+    for (int i = 0; i < N; i++)
+        scanf("%d", &value[i]);
+    for (int i = 0; i < N; i++)
+        scanf("%d", &weight[i]);
+    scanf("%d", &W);
+    int dp[W + 1];
+    for(int j = 0; j <= W; j++)
+        dp[j] = 0;
+    for (int i = 0; i < N; i++) {
+        for (int j = W; j >= weight[i]; j--){
+            if (dp[j - weight[i]] + value[i] > dp[j])
+                dp[j] = dp[j - weight[i]] + value[i];
+        }
+    }
+    printf("%d", dp[W]);
     return 0;
 }

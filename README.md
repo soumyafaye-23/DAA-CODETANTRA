@@ -257,7 +257,7 @@ DAA-Solutions/
 
 ---
 
-### 💰 Practical 06 — Greedy Method
+### 💰 Practical 06 — Knapsack Problem (0/1)
 
 <table>
 <tr>
@@ -267,16 +267,16 @@ DAA-Solutions/
 <th>🧠 Design Strategy / Space</th>
 </tr>
 <tr>
-<td><b>1.1.11.</b> Knapsack Problem</td>
-<td>Maximizes value of items in a capacity-limited knapsack. Implements Greedy Fractional knapsack logic.</td>
+<td><b>1.1.11.</b> Knapsack Problem (0/1)</td>
+<td>Solves the <b>0/1 Knapsack Problem</b> — each item is either fully taken or excluded (no fractions). Uses a <b>1D DP table</b> iterated in reverse to prevent item reuse. Finds the maximum value achievable within capacity <code>W</code>.</td>
 <td>
-<code>Best: O(n log n)</code><br/>
-<code>Avg: O(n log n)</code><br/>
-<code>Worst: O(n log n)</code>
+<code>Best: O(N * W)</code><br/>
+<code>Avg: O(N * W)</code><br/>
+<code>Worst: O(N * W)</code>
 </td>
 <td>
-<b>Greedy Method</b><br/>
-<code>O(n)</code> (Sorting array)
+<b>Dynamic Programming</b><br/>
+<code>O(W)</code> (1D dp array)
 </td>
 </tr>
 </table>
@@ -347,6 +347,7 @@ Quick Sort      ██████████████████          
 Prim's (MST)    ██████████████████                          O(V²)
 Dijkstra's      ██████████████████                          O(V²)
 Bellman-Ford    ████████████████████████                    O(V * E)
+0/1 Knapsack    ████████████████████████████                O(N * W)
 LCS (DP)        ████████████████████████████                O(m * n)
 TSP (B&B)       ██████████████████████████████████          O(N!)
 Sum of Subsets  ██████████████████████████████████████████  O(2ⁿ)
