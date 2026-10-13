@@ -320,15 +320,15 @@ DAA-Solutions/
 </tr>
 <tr>
 <td><b>1.1.13.</b> Travelling Salesman Problem</td>
-<td>Computes the shortest path visiting all cities once and returning to source using Branch and Bound state-space search.</td>
+<td>Finds the shortest route visiting all <code>n</code> cities exactly once and returning to the start. Uses <b>Bitmask DP with memoization</b> — each state is <code>(visited_mask, current_city)</code>. Handles missing edges (<code>-1</code> in the cost matrix) as infinity. Starts from city 0.</td>
 <td>
-<code>Best: O(2ⁿ * n²)</code><br/>
-<code>Avg: O(2ⁿ * n²)</code><br/>
-<code>Worst: O(n!)</code>
+<code>Best: O(2ⁿ * n)</code><br/>
+<code>Avg: O(2ⁿ * n)</code><br/>
+<code>Worst: O(2ⁿ * n²)</code>
 </td>
 <td>
-<b>Branch and Bound</b><br/>
-<code>O(2ⁿ * n)</code> (Active states)
+<b>Bitmask DP + Memoization</b><br/>
+<code>O(2ⁿ * n)</code> (dp table)
 </td>
 </tr>
 </table>
@@ -349,7 +349,7 @@ Dijkstra's      ██████████████████          
 Bellman-Ford    ████████████████████████                    O(V * E)
 0/1 Knapsack    ████████████████████████████                O(N * W)
 LCS 3-Str (DP)  ████████████████████████████                O(m*n*o)
-TSP (B&B)       ██████████████████████████████████          O(N!)
+TSP (Bitmask)   ██████████████████████████████████          O(2ⁿ * n²)
 Sum of Subsets  ██████████████████████████████████████████  O(2ⁿ)
 
                 ◄─── Faster                    Slower ───►
