@@ -293,16 +293,16 @@ DAA-Solutions/
 <th>🧠 Design Strategy / Space</th>
 </tr>
 <tr>
-<td><b>1.1.12.</b> Longest Common Sub Sequence</td>
-<td>Finds the longest common subsequence of two strings by tabulating matching prefix lengths bottom-up.</td>
+<td><b>1.1.12.</b> Longest Common Sub Sequence (3 Strings)</td>
+<td>Finds the <b>LCS of three strings</b> X, Y, Z using a <b>3D DP table</b> built bottom-up. Strips trailing newlines from <code>fgets</code> input before processing. Uses <code>static</code> allocation to handle large inputs without stack overflow.</td>
 <td>
-<code>Best: O(m*n)</code><br/>
-<code>Avg: O(m*n)</code><br/>
-<code>Worst: O(m*n)</code>
+<code>Best: O(m*n*o)</code><br/>
+<code>Avg: O(m*n*o)</code><br/>
+<code>Worst: O(m*n*o)</code>
 </td>
 <td>
 <b>Dynamic Programming</b><br/>
-<code>O(m*n)</code> (LCS table)
+<code>O(m*n*o)</code> (3D dp table)
 </td>
 </tr>
 </table>
@@ -348,7 +348,7 @@ Prim's (MST)    ██████████████████          
 Dijkstra's      ██████████████████                          O(V²)
 Bellman-Ford    ████████████████████████                    O(V * E)
 0/1 Knapsack    ████████████████████████████                O(N * W)
-LCS (DP)        ████████████████████████████                O(m * n)
+LCS 3-Str (DP)  ████████████████████████████                O(m*n*o)
 TSP (B&B)       ██████████████████████████████████          O(N!)
 Sum of Subsets  ██████████████████████████████████████████  O(2ⁿ)
 
